@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Formularios</title>
+</head>
+<body>
+    <form method="post" action="test">
+        <label for="nombre">
+            Nombre
+            <input type="text" id="nombre" name="nombre" placeholder="Tu nombre acá" required>
+        </label>
+        <br>
+        <label for="apellido">
+            Apellido
+            <input type="text" id="apellido" name="apellido" placeholder="Tu apellido acá" required>
+        </label>
+        <br>
+        <label for="email">
+            Dirección de email
+            <input type="email" id="email" name="email" placeholder="usuario@gmail.com" required>
+        </label>
+        <br>
+        <label for="pais">
+            Seleccione su país
+            <select id="pais" name="pais" required>
+                <option value="">Seleccione su país...</option>
+                <option value="1">Argentina</option>
+                <option value="2">Bolivia</option>
+                <option value="3">Brasil</option>
+                <option value="4">Chile</option>
+                <option value="5">Colombia</option>
+                <option value="6">Guayana Francesa</option>
+                <option value="7">Guyana</option>
+                <option value="8">Paraguay</option>
+                <option value="9">Perú</option>
+                <option value="10">Trinidad y Tobago</option>
+                <option value="11">Surinam</option>
+                <option value="12">Uruguay</option>
+                <option value="13">Venezuela</option>
+            </select>
+        </label>
+        <br>
+        <h2>Seleccione género literario:</h2>
+                <input type="checkbox" name="epico">Epico<br>
+                <input type="checkbox" name="lirico">Lírico<br>
+                <input type="checkbox" name="dramatico">Dramático<br>
+                <input type="checkbox" name="cuento">Cuento<br>
+                <input type="checkbox" name="novela">Novelo<br>
+        <br>
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>

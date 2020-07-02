@@ -1,0 +1,108 @@
+//para extra small, small y medium device 768px and less)//
+body{
+    margin: 0;
+    font-family: $font-family;
+    color: $color-primary;
+    font-size: $font-size;
+   
+    .datos{
+        border-bottom: solid 2px $color-border;
+        h1, p{
+            text-align: center;
+        }
+        p{
+            line-height: 0.5em;
+        }
+        div{
+            display: flex;
+            justify-content: center;
+            img{
+                width:30vw;
+                border: solid 5px $color-border;
+                border-radius: 50%;
+                padding: 5px;
+            } 
+        }
+    }
+
+    .contenedor-texto{
+        width: 100%;
+        h2{
+            display:block;
+            text-align: center;
+            color: $color-secondary;
+            border: solid 2px $color-border;
+            border-radius: 0px 160px 160px 0px;
+            background-color: $color-background;
+        }
+        p{
+            text-align: justify;
+            margin-left: 3%;
+            margin-right: 4%;
+        }
+    }
+    
+    .contenedor-lista{
+        width: 100%;
+        h2{
+            display:block;
+            text-align: center;
+            color: $color-secondary;
+            border: solid 2px $color-border;
+            border-radius: 0px 160px 160px 0px;
+            background-color: $color-background;
+        }
+        ul{
+            margin:6%;
+            padding:0;
+            list-style: none;
+            li::before{
+                content: "★";
+            }
+            li{
+                margin-right: 4%; 
+                a{
+                    color: $color-primary;
+                }
+                a:link{
+                    text-decoration: none;
+                }
+                a:visited{
+                    text-decoration: none;
+                }
+                a:hover{
+                    text-decoration: underline;
+                } 
+            }
+        }
+    }    
+}
+
+//large devices (desktops, 992px and up)//
+@media (min-width: $desktop){
+    body{
+        header, .datos, .contenedor-texto, .contenedor-formulario{
+            display:flex;
+            flex-direction: column;
+        }  
+        .contenedor-texto{
+            h2{
+                border-radius: 160px 160px 160px 160px;    
+            }
+        }
+        main{
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-between;
+            .contenedor-lista{
+                width: 50%;
+                height: 50%;
+            }
+            .datos, .contenedor-lista{
+                h2{
+                    border-radius: 160px 160px 160px 160px;    
+                }
+            }
+        }
+    }   
+}

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Sulphur+Point&display=swap" rel="stylesheet">
+    <title>Karibel Barco Taboada</title>
+</head>
+
+<body>
+    
+    <header>
+        <input type="checkbox" id="btn-menu">
+        <label for="btn-menu">
+            <img src="images/icono-menu.svg" alt="boton menu">
+        </label>
+        <nav class="menu">
+            <ul>
+                <li>
+                    <a href="#datos">Datos</a>
+                </li>
+                <li>
+                    <a href="#presentacion">Presentacion</a>
+                </li>
+                <li>
+                    <a href="#tecnologias">Tecnologías</a>
+                </li>
+                <li>
+                    <a href="#conocimientos">Conocimientos</a>
+                </li>
+                <li>
+                   <a href="#idiomas">Idiomas</a>
+                </li>
+                <li>
+                    <a href="#educacion">Educación</a>
+                </li>
+                <li>
+                    <a href="#proyectos">Proyectos</a>
+                </li>
+                <li> 
+                    <a href="#laboral">Experiencia Laboral</a>
+                </li>
+                <li>
+                    <a href="#contactame">Contactame</a>
+                </li>
+            </ul>       
+        </nav>  
+    </header>
+
+    <div class="datos">
+        <a id="datos"></a>
+        <h1>Karibel Barco Taboada</h1>
+        <div>
+            <img src="images/foto.jpeg" alt="Foto Perfil">
+        </div>
+        <p>Dir. Santos Lugares, Buenos Aires</p>
+        <p>Telf. 0054-911-21685966</p>
+        <p>E-mail karibel.barco@gmail.com</p>
+    </div>
+
+    <div class=contenedor-texto>
+        <a id="presentacion"></a>
+        <h2>Presentación</h2>
+        <p>Profesional en turismo y estudiante de desarrollo fullstack apasionada por las nuevas tecnologías y técnicas de programación.</p>
+        <p>Como objetivo profesional busco siempre la mejora continua, tanto de los procesos de trabajo como de mis propios conocimientos, enfocada siempre en el cumplimiento de los objetivos fijados a través del trabajo en equipo y la satisfacción del cliente, tomando como referencia la calidad del trabajo realizado.</p>
+    </div>
+    
+    <main>
+        <div class=contenedor-lista>
+            <a id="tecnologias"></a>
+            <h2>Tecnologías</h2>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>SASS</li>
+                <li>Scripts para automatización de tareas en SABRE</li>
+            </ul>
+        </div>
+
+        <div class=contenedor-lista> 
+            <a id="conocimientos"></a>
+            <h2>Otros conocimientos</h2>
+            <ul>
+                <li>SABRE GDS Turismo (como usuario)</li>
+                <li>AMADEUS GDS Turismo (como usuario)</li>
+                <li>Tourplan (como usuario)</li>
+            </ul>
+        </div>
+
+        <div class=contenedor-lista> 
+            <a id="idiomas"></a>
+            <h2>Idiomas</h2>
+            <ul>
+                <li>Español nativo</li>
+                <li>Ingles avanzado</li>
+                <li>Francés básico</li>
+            </ul>
+        </div>
+
+        <div class=contenedor-lista>
+            <a id="educacion"></a>
+            <h2>Educación</h2>
+            <ul>
+                <li>2019-Presenta Acamica: Desarrollo Web Full Stack</li>
+                <li>2009-2013 Universidad Nueva Esparta: Licenciatura de Administración de Empresas Turísticas</li>
+                <li>2007-2009 Universidad Central de Venezuela: Curso de Francés Avanzado</li>
+                <li>2004-2006 CVA: Curso de Inglés Avanzado</li>
+                <li>2001-2009 Colegio Nuestra Señora de la Consolación: Bachiller en Humanidades</li>
+            </ul>
+        </div>
+
+        <div class=contenedor-lista>
+            <a id="proyectos"></a>
+            <h2>Mis proyectos</h2>
+            <ul>
+                <li> 
+                    <a href="https://github.com/KaribelBT/practice-forms" target="_blank">Formularios</a>            
+                </li>
+                <li>
+                    <a href="https://github.com/KaribelBT/mi-artista-favorito" target="_blank">Mi Artista Favorito</a>
+                </li>
+                <li>
+                    <a href="https://github.com/KaribelBT/reloj-animado" target="_blank">Reloj Animado</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class=contenedor-lista>
+            <a id="laboral"></a>
+            <h2>Experiencia Laboral</h2>
+            <ul>
+                <li>Asesor de Viajes/Responsable de aéreos (Mayo 2015 - Actualidad): Cotización, reserva, emisión y remisión de tickets aérea con SABRE (individuales y grupos). Cotización, reserva y venta de cruceros, paquetes a medida, circuitos y asistencia al viajero.</li>
+            </ul>
+        </div>
+    </main>
+   
+   <footer class=contenedor-formulario>
+        <a id="contactame"></a>
+        <p>Si querés hacerme alguna consulta:</p>
+        <form action="formulario-contacto" method="post">
+            <div>
+                <label for="name">Nombre</label>
+                <input type="text" placeholder="Nombre y apellido" id="name"/>
+            </div>
+            <div>
+                <label for="mail">E-mail</label>
+                <input type="email" placeholder="ejemplo@tumail.com" id="mail"/>
+            </div>
+            <div>
+                <label for="msg">Mensaje</label>
+                <textarea placeholder="Escribe tu mensaje aquí" id="msg"></textarea>
+            </div>
+            <div class="button">
+                <button type="submit">Enviar</button>
+            </div>
+        </form>
+    </footer>
+
+</body>
+</html>

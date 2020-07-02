@@ -1,0 +1,14 @@
+#main {
+  font-family: Tahoma;
+}
+
+p {	color: #808080; }
+
+.primary { color: black; }
+
+.spaceships p { color: grey; }
+
+.spaceships p.primary { color: darkkhaki; }
+
+#pink { color: #FF1493; }
+

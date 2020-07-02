@@ -1,0 +1,66 @@
+body{
+    .contenedor-formulario{
+        background-color: $color-background;
+        padding-top: 0.1em;
+        p{
+            padding-left: 0.5em;
+            color: $color-secondary;
+            font-weight: bold;
+        }
+        form{
+            margin: 0 auto;
+            width: 80%;
+            padding: 1em;
+            div + div{
+                margin-top: 1em,
+            }
+            label{
+                display: inline-block;
+                padding-right: 2px;
+                padding-left: 2px;
+                width: 78px;
+                color: $color-secondary;
+                font-weight: bold;
+                border: 1px solid white;
+            }
+            input, textarea{
+                font: 1em $font-family;
+                color: $color-secondary;
+                font-weight: bold;
+                background-color: $color-background;
+                box-sizing: border-box;
+                border: 1px solid white;
+                &:focus{
+                    border-color: black;
+                }
+            }
+            textarea{
+                vertical-align: top;
+                height: 5em;
+                resize: vertical;
+            }
+            .button{
+                width: max-content;
+                padding-left:90px;
+            }
+            button{
+                font: 1em $font-family;
+                color: $color-secondary;
+                font-weight: bold;
+                background-color: $color-background;
+                &:hover{
+                    cursor:pointer;
+                }
+            }
+        } 
+    }
+}
+
+//medium devices (tablets, 768px and up)//
+@media (min-width: $tablet){
+    body{}
+}
+
+//large devices (desktops, 992px and up)//
+@media (min-width: $desktop){
+}
